@@ -13,4 +13,3 @@ class DownloadTask(models.Model):
     task_update_date = models.DateTimeField()
     task_progress = models.IntegerField(default=0)
     task_status = models.IntegerField(default=0, db_index=True)
-    task_type = models.IntegerField(default=0, db_index=True)
