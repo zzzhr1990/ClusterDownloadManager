@@ -5,10 +5,8 @@ from .serializers import ServerSerializer
 
 class ServerViewSet(viewsets.ModelViewSet):
     """
-    API endpoint that allows users to be viewed or edited.
+    API endpoint that allows online servers to be viewed or edited.
     """
-    #queryset = User.objects.all().order_by('-date_joined')
-    #queryset = User.objects.all().order_by('-date_joined')
     queryset = OnlineServer.objects.all() # pylint: disable=E1101
     serializer_class = ServerSerializer
 #
