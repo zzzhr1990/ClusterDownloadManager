@@ -2,8 +2,10 @@ from django.db import models
 
 # Create your models here.
 
+
 class OnlineServer(models.Model):
     """Download Task Server"""
+
     def __str__(self):
         return "Server %d - %s" % (self.server_type, self.server_uid,)
     server_type = models.IntegerField(default=0, db_index=True)
